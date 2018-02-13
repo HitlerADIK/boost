@@ -33,9 +33,9 @@ body
 	margin: 0 auto;
 	margin-top:80px;
 	min-width:80%;
-	min-height:60px;
+	min-height:30px;
 	max-width:80%;
-	max-height:60px;
+	max-height:50px;
 	background:rgba(115, 114, 114, 0.85);
 	border:3px double silver;
 	font-family:'Trebuchet';
