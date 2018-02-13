@@ -1,0 +1,105 @@
+/* Общие стили */
+body
+{
+   margin:0;
+   padding:0;
+   background:url('images/back.jpg');
+   background-repeat: no-repeat;
+   background-size: 100%;
+   text-align:center;
+   height: 100%;
+   min-width:900px;
+   background-attachment: fixed;
+   -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+.header
+{
+	height:60px;
+	width:100%;
+	background:rgba(5,5,5,0.9);
+	position:absolute;
+	font-family:Arial;
+	color:Orange;
+}
+
+
+
+.menu
+{
+	margin: 0 auto;
+	margin-top:80px;
+	min-width:612px;
+	min-height:60px;
+	max-width:612px;
+	max-height:60px;
+	background:rgba(115, 114, 114, 0.85);
+	border:3px double silver;
+	font-family:'Trebuchet';
+	
+}
+
+.menu ul 
+{
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	background:rgba(115, 114, 114, 0.85);
+}
+		
+.menu ul li 
+{
+	display:inline-block;
+	width:150px;
+}
+		
+.menu a 
+{
+	display:block;
+	padding:0 10px;
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+			
+.menu a:hover 
+{
+	background:rgba(5, 53, 54, 1);
+}
+		
+.menu ul ul 
+{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+.menu ul li:hover > ul 
+{
+	display:inherit;
+}
+
+.menu ul ul li 
+{
+	min-width:180px;
+	float:none;
+	display:list-item;
+    position: relative;
+}
+
+.content
+{	
+	margin:0 auto;
+	margin-top:50px;
+	min-width:1200px;
+	min-height:1000px;
+	max-width:1200px;
+	background:rgba(115, 114, 114, 0.75);
+	border:3px double rgba(7%, 7%, 7%, 1);
+	margin-bottom:20px;
+}

@@ -1,0 +1,33 @@
+.credits-main
+{
+	width:90%;
+	min-height:700px;
+	background:rgba(255, 237, 237,0.85);
+	margin:0 auto;
+	margin-top:30px;
+	padding:0px;
+}
+
+.credits-main p
+{
+	font-size:18;
+	font-family:'Comic Sans MS';
+}
+
+.creditsFields
+{
+	width:130px;
+	height:30px;
+	font-size:25;
+	text-align:center;
+}
+
+#payButton
+{
+	width:100px;
+	height:40px;
+	font-size:18;
+	background:silver;
+	border:3px double;
+	cursor:pointer;
+}

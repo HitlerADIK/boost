@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>WOT HELP - помощь с ЛБЗ, прокачка техники, фарм опыта и кредитов</title>
+		<link rel="shortcut icon" href="images/network.ico" type="image/x-icon">
+		<link rel="stylesheet" href="styles-credits.css">
+		<link rel="stylesheet" href="styles.css">
+		<meta charset="windows-1251">
+	</head>
+	<body>
+	<!-- Заголовок -->
+	<div class="header">
+	<div>
+	<!-- Меню -->
+			<div class="menu">
+			    <ul>
+			        <li><a href="#">ЛБЗ</a>
+								
+			            <!-- первый уровень выпадающего списка -->
+			            <ul>
+			                <li><a href="stug-iv.html">StuG IV</a></li>
+			                <li><a href="t28concept.html">T28 HTC</a></li>
+			                <li><a href="t55a.html">T-55A</a></li>
+							<li><a href="object260.html">Object 260</a></li>
+			            </ul>
+						
+					</li>
+			        <li><a href="#">Фарм опыта</a></li>
+			        <li><a href="earn-credits.html">Фарм кредитов</a></li>
+			        <li><a href="#">Прокачка</a>
+					  <ul>
+			                <li><a href="#">ЛТ</a></li>
+			                <li><a href="#">СТ</a></li>
+			                <li><a href="#">ТТ</a></li>
+							<li><a href="#">ПТ-САУ</a></li>
+			            </ul>
+					</li>
+			    </ul>
+			</div>
+	<div class="credits-main">
+		<h1>Фарм кредитов</h1>
+		<p>Кредиты - игровой ресурс, зарабатываемый в боях. Используется для покупки техники, оборудования, снаряжения, пополнения боекомплекта, обучения экипажа и другое.</p>
+		<p>Курс 100000 = 150 рублей</p>
+		<p>Кредитов</p>
+		<input class="creditsFields" id="creditsField" type="text" onkeyup="calculateCostCredits()">
+		<p>Рублей</p>
+		<input class="creditsFields" id="costField" type="text">
+		<br>
+		<input id="payButton" type="button" value="Заказать">
+	</div>
+	<script>
+	function calculateCostCredits()
+	{
+		str = 0;
+		if( document.getElementById('creditsField').value <= 10000000 )
+		{
+			var needCredits = document.getElementById('creditsField').value;
+			var cost = Math.floor(needCredits/6666.66);
+			document.getElementById('costField').value = cost;
+		}
+		else
+		{
+			var str = document.getElementById('creditsField').value;
+			str = str.substring(0, str.length - 1);
+			document.getElementById('creditsField').value = str;
+		}
+	}
+	</script>
+	</body>
+</html>
